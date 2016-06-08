@@ -38,7 +38,7 @@ app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-   res.send("hi truleo bitch");
+   res.render("layout");
 });
 
 app.use(express.static(__dirname + "/public"));
