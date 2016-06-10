@@ -38,14 +38,17 @@ app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-   res.render("layout");
+   res.render("main/home");
 });
+
+app.use(require("./routes/userRoutes"));
+
 
 app.use(express.static(__dirname + "/public"));
 
 app.listen(config.port, function (err) {
     if(err) console.log("server connection error");
 
-    console.log("server successgully connected");
+    console.log("server successfully connected");
 });
 

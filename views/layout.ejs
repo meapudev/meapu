@@ -1,10 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <title>MEAPU</title>
+    <link rel="stylesheet" href="/css/custom.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
 </head>
+
 <body>
-    <h1>this is the parent page</h1>
+
+<% include ./partials/navbar %>
+
+
+
+<div class="container">
+
+    <%- body -%>
+
+</div> <!-- /container -->
+
+<% include ./partials/footer %>
+<% include ./partials/javascriptLibs %>
 </body>
 </html>
