@@ -7,3 +7,12 @@ body {
 main {
     flex: 1 0 auto;
 }
+nav{
+    height: 150px!important; background-color: #fff!important; color:#000!important;
+}
+.navbarProfile{
+    background-color: #fff!important;
+    color:#000!important; font-weight: bold; padding-top: 3px!important;
+    box-shadow: none!important; vertical-align: middle;
+    height: 52px!important;margin-top: 20px!important;
+}
